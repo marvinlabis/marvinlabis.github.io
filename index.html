@@ -17,24 +17,25 @@
         
         
            
-        <div class="navbar-fixed">
+        <div class="navbar-fixed" ng-controller="MenuCtrl">
 
+        
             <nav>   
                 <div class="nav-wrapper light-blue accent-4">
                     <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#/"><i class="material-icons left">store</i>Home</a></li>
-                        <li><a href="#/about"><i class="material-icons left">perm_scan_wifi</i>About</a></li>
-                        <li><a href="#/work"><i class="material-icons left">settings_input_composite</i>Work</a></li>
-                        <li><a href="#/speak"><i class="material-icons left">android</i>Speak</a></li>
-                        <li><a href="#/contact"><i class="material-icons left left">textsms</i>Contact</a></li>
+                        <li ng-class="getClass('/')"><a href="#/"><i class="material-icons left">store</i>Home</a></li>
+                        <li ng-class="getClass('/about')"><a href="#/about"><i class="material-icons left">perm_scan_wifi</i>About</a></li>
+                        <li ng-class="getClass('/work')"><a href="#/work"><i class="material-icons left">settings_input_composite</i>Work</a></li>
+                        <li ng-class="getClass('/speak')"><a href="#/speak"><i class="material-icons left">android</i>Speak</a></li>
+                        <li ng-class="getClass('/contact')"><a href="#/contact"><i class="material-icons left left">textsms</i>Contact</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-nav">
-                        <li><a href="#/"><i class="material-icons left">store</i>Home</a></li>
-                        <li><a href="#/about"><i class="material-icons left">perm_scan_wifi</i>About</a></li>
-                        <li><a href="#/work"><i class="material-icons left">settings_input_composite</i>Work</a></li>
-                        <li><a href="#/speak"><i class="material-icons left">android</i>Speak</a></li>
-                        <li><a href="#/contact"><i class="material-icons left left">textsms</i>Contact</a></li>
+                        <li ng-class="getClass('/')"><a href="#/"><i class="material-icons left">store</i>Home</a></li>
+                        <li ng-class="getClass('/about')"><a href="#/about"><i class="material-icons left">perm_scan_wifi</i>About</a></li>
+                        <li ng-class="getClass('/work')"><a href="#/work"><i class="material-icons left">settings_input_composite</i>Work</a></li>
+                        <li ng-class="getClass('/speak')"><a href="#/speak"><i class="material-icons left">android</i>Speak</a></li>
+                        <li ng-class="getClass('/contact')"><a href="#/contact"><i class="material-icons left left">textsms</i>Contact</a></li>
                     </ul>
                 </div>
             </nav>

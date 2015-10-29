@@ -23,17 +23,28 @@
   margin-bottom: 12px;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+/*
+html, body {
+  height: 100%;
 }
-
-main {
-    flex: 1 0 auto;
+.page-wrap {
+  min-height: 10%;
+  margin-bottom: -10px; 
 }
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 100px; 
+}
+.site-footer {
+  background: orange;
+}
+*/
 
 img.tech-logo {
     height: 52px;
     width: 52px;
 }
+

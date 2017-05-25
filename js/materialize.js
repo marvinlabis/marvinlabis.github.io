@@ -426,6 +426,11 @@ else {
   $(document).ready(function(){
     $('.collapsible').collapsible();
   });
+	
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+	
 }( jQuery ));;(function ($) {
 
   // Add posibility to scroll to selected option

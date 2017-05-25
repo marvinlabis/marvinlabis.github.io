@@ -428,8 +428,9 @@ else {
   });
 	
   $(document).ready(function(){
-    $('.collapsible').collapsible();
+      $('.carousel').carousel();
   });
+        
 	
 }( jQuery ));;(function ($) {
 

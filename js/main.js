@@ -33,7 +33,7 @@ app.config(['$routeProvider', function ($routeProvider) {
  * Controls all other Pages
  */
 app.controller('PageAboutCtrl', function ( /*$scope, $location, $http */) {
-    $('.corousel').corousel({
+    $('.carousel').carousel({
             accordion : false 
           });
 })

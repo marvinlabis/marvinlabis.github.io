@@ -18,7 +18,8 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Home
     .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
     // Pages
-    .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
+    // .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
+    .when("/about", {templateUrl: "partials/about.html", controller: "PageAboutCtrl"})
     .when("/work", {templateUrl: "partials/work.html", controller: "PageWorkCtrl"})
     .when("/speak", {templateUrl: "partials/speak.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
@@ -31,6 +32,12 @@ app.config(['$routeProvider', function ($routeProvider) {
 /**
  * Controls all other Pages
  */
+app.controller('PageAboutCtrl', function ( /*$scope, $location, $http */) {
+    $('.corousel').corousel({
+            accordion : false 
+          });
+})
+
 app.controller('PageCtrl', function ( /*$scope, $location, $http */) {
     console.log("Page Controller reporting for duty.");
 });

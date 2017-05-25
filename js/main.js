@@ -34,9 +34,9 @@ app.config(['$routeProvider', function ($routeProvider) {
  */
 app.controller('PageAboutCtrl', function ( /*$scope, $location, $http */) {
   console.log("About Page Controller reporting for duty.");
-    $('.carousel').carousel({
-            accordion : false 
-          });
+//     $('.carousel').carousel({
+//             accordion : false 
+//           });
 })
 
 app.controller('PageCtrl', function ( /*$scope, $location, $http */) {
